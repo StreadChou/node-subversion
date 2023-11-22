@@ -5,6 +5,7 @@ export declare abstract class AbstractSvnCommand<DATA, OPTION extends Subversion
     protected readonly opt: RunShellCommandConfig<DATA, OPTION>;
     protected constructor(opt: RunShellCommandConfig<DATA, OPTION>);
     abstract run(): Promise<any>;
+    protected get SvnCommandLine(): string;
     protected appendCommandLineAndRun(cmd: string): Promise<any>;
     protected getExecFunction(): TypeExecFunction;
     protected getSplitFunction(): TypeSplitFunction | undefined;

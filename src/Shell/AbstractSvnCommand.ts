@@ -10,6 +10,10 @@ export abstract class AbstractSvnCommand<DATA, OPTION extends SubversionShellOpt
 
     abstract run(): Promise<any>;
 
+    protected get SvnCommandLine() {
+        return this.opt.subversion_command;
+    }
+
     protected async appendCommandLineAndRun(cmd: string): Promise<any> {
         cmd = this.appendCommandLineOption(cmd);
         let res = await this.getExecFunction()(cmd);
