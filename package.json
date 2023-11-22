@@ -1,0 +1,31 @@
+{
+  "name": "node-subversion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StreadChou/ExtensionType.git"
+  },
+  "keywords": [
+    "node",
+    "svn",
+    "subversion",
+    "command"
+  ],
+  "author": "stread.chou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StreadChou/ExtensionType/issues"
+  },
+  "homepage": "https://github.com/StreadChou/ExtensionType#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.9.4",
+    "typescript": "^5.3.2"
+  }
+}

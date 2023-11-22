@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2022",
+    "declaration": true,
+    "inlineSourceMap": true,
+    "outDir": "./lib",
+  },
+  "include": ["src/**/*"]
+}
